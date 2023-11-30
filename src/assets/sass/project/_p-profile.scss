@@ -1,0 +1,19 @@
+@use "../global" as global;
+
+.p-profile__sns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.p-profile__sns-x {
+  font-size: 20px;
+}
+
+.p-profile__sns-facebook {
+  font-size: 20px;
+}
+
+.p-profile__sns-instagram {
+  font-size: 20px;
+}

@@ -1,0 +1,25 @@
+@use "../global" as global;
+
+.c-toTop {
+  background: global.$accent-color;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    background: linear-gradient(to bottom, global.$accent-color, #fff);
+    border: 1px solid global.$accent-color;
+  }
+
+  @include global.mq("sp") {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}

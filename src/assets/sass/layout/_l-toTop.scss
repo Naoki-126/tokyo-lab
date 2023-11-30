@@ -1,0 +1,13 @@
+@use "../global" as global;
+
+.l-toTop {
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  // display: none;
+
+  @include global.mq(sp) {
+    bottom: 30px;
+    right: 15px;
+  }
+}

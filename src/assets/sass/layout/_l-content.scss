@@ -1,0 +1,19 @@
+@use "../global" as global;
+
+.l-content {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.l-content__main {
+  width: 70%;
+}
+
+.l-content__side {
+  width: calc(100% - 70%);
+}

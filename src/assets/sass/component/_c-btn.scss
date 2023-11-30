@@ -1,0 +1,9 @@
+@use "../global" as global;
+
+.c-btn {
+  background: global.$accent-color;
+  padding: 10px 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  color: #fff;
+}
