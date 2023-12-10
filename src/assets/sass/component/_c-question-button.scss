@@ -1,0 +1,31 @@
+@use "../global/" as g;
+.c-question-button {
+    max-width: 470px;
+    width: 100%;
+    margin: 68px auto 0;
+
+}
+
+.p-question-button-text {
+    background:#004986;
+    font-family: g.$ff-en;
+    font-size: 25px;
+    color: #fff;
+    display: inline-block;
+    padding: 35px 73px 26px 46px;
+    position: relative;
+
+    &::after{
+     position: absolute;
+    top: 43%;
+    right: 46px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16.477" height="18.249" viewBox="0 0 16.477 18.249"><path id="パス_15" data-name="パス 15" d="M981.3,1158.54l13.974,7.608-13.974,8.92" transform="translate(-980.765 -1157.662)" fill="none" stroke="%23fff" stroke-width="2"/></svg>');
+
+    
+    }
+
+}
+

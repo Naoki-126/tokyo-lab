@@ -40,7 +40,7 @@ figure {
 }
 
 html {
-	line-height: 1.2;
+	line-height: 1;
 }
 
 ol,
@@ -85,8 +85,8 @@ button {
 }
 
 body {
-	color: #2D2D32;
-	font-family: "Noto Sans JP", "Meiryo", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+	color: #585684;
+	font-family: "Noto Sans JP", "NotoSansCJKjp", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: 0.08;
@@ -105,13 +105,14 @@ a {
 .l-inner {
 	margin: 0 auto;
 	max-width: 100%;
-	width: 1440px;
+	width: 1280px;
 }
 
 .l-header {
 	margin: 0 auto;
 	position: fixed;
 	width: 100%;
+	z-index: 20;
 }
 
 .l-header__nav {
@@ -120,7 +121,7 @@ a {
 	height: 100%;
 	margin: 0 auto;
 	max-width: 100%;
-	width: 1440px;
+	width: 1280px;
 }
 
 .l-header__left {
@@ -178,7 +179,7 @@ a {
 }
 
 .c-btn {
-	background: #64629D;
+	background: #fff;
 	border-radius: 10px;
 	color: #fff;
 	font-weight: 700;
@@ -212,7 +213,7 @@ a {
 }
 
 .c-drawer__line {
-	background: #64629D;
+	background: #fff;
 	border-radius: 1px;
 	content: "";
 	height: 3px;
@@ -222,7 +223,7 @@ a {
 }
 
 .c-drawer__line.is-show {
-	background: #64629D;
+	background: #fff;
 }
 
 .c-drawer__line:nth-child(1) {
@@ -242,7 +243,7 @@ a {
 }
 
 .c-toTop {
-	background: #64629D;
+	background: #fff;
 	border-radius: 50%;
 	color: #fff;
 	display: inline-block;
@@ -255,8 +256,127 @@ a {
 }
 
 .c-toTop:hover {
-	background: linear-gradient(to bottom, #64629D, #fff);
-	border: 1px solid #64629D;
+	background: linear-gradient(to bottom, #fff, #fff);
+	border: 1px solid #fff;
+}
+
+.c-main-visual-title-block {
+	display: flex;
+	margin-top: 44px;
+	padding-left: 6px;
+}
+
+.p-main-visual-head-primary {
+	background: #004986;
+	color: #FFEA00;
+	font-family: "Montserrat", sans-serif;
+	font-size: 43px;
+	font-weight: 700;
+	height: 92px;
+	padding: 25px 46px 24px 41px;
+	width: 431px;
+}
+
+.p-main-visual-head-primary::after {
+	color: #fff;
+	content: "+";
+	font-size: 50px;
+	font-weight: normal;
+	left: 45.2%;
+	position: absolute;
+	top: 37%;
+}
+
+.p-main-visual-head-secondary {
+	background: #004986;
+	color: #FFEA00;
+	font-family: "Montserrat", sans-serif;
+	font-size: 43px;
+	font-weight: 700;
+	height: 92px;
+	margin-left: 84px;
+	padding: 25px 46px 24px 41px;
+	width: 431px;
+}
+
+.c-util-button {
+	margin: 0 auto;
+	max-width: 432px;
+	padding: 30px 0;
+	width: 100%;
+}
+
+.p-util-text {
+	background: #FFEA00;
+	color: #000;
+	display: inline-block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 25px;
+	padding: 29px 128px 26px;
+	position: relative;
+}
+
+.p-util-text::after {
+	background-image: url('data:image/svg+xml;utf8,<svg height="18.249" viewBox="0 0 16.477 18.249" width="16.477" xmlns="http://www.w3.org/2000/svg"><path d="m981.3 1158.54 13.974 7.608-13.974 8.92" fill="none" stroke="%23000" stroke-width="2" transform="translate(-980.765 -1157.662)"/></svg>');
+	content: "";
+	display: inline-block;
+	height: 18.249px;
+	left: 73%;
+	position: absolute;
+	top: 38%;
+	width: 16.477px;
+}
+
+.c-section-button {
+	margin: 100px auto 0;
+	max-width: 432px;
+	width: 100%;
+}
+
+.p-section-button-text {
+	background: #004986;
+	color: #fff;
+	display: inline-block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 25px;
+	padding: 29px 66px 26px;
+	position: relative;
+}
+
+.p-section-button-text::after {
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16.477" height="18.249" viewBox="0 0 16.477 18.249"><path id="パス_15" data-name="パス 15" d="M981.3,1158.54l13.974,7.608-13.974,8.92" transform="translate(-980.765 -1157.662)" fill="none" stroke="%23fff" stroke-width="2"/></svg>');
+	content: "";
+	height: 16px;
+	position: absolute;
+	right: 43px;
+	top: 39%;
+	width: 16px;
+}
+
+.c-question-button {
+	margin: 68px auto 0;
+	max-width: 470px;
+	width: 100%;
+}
+
+.p-question-button-text {
+	background: #004986;
+	color: #fff;
+	display: inline-block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 25px;
+	padding: 35px 73px 26px 46px;
+	position: relative;
+}
+
+.p-question-button-text::after {
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16.477" height="18.249" viewBox="0 0 16.477 18.249"><path id="パス_15" data-name="パス 15" d="M981.3,1158.54l13.974,7.608-13.974,8.92" transform="translate(-980.765 -1157.662)" fill="none" stroke="%23fff" stroke-width="2"/></svg>');
+	content: "";
+	height: 16px;
+	position: absolute;
+	right: 46px;
+	top: 43%;
+	width: 16px;
 }
 
 .p-profile__sns {
@@ -295,6 +415,10 @@ a {
 	margin-top: 20px;
 }
 
+.p-contact__field.-radio {
+	align-items: start;
+}
+
 .p-contact__head {
 	align-items: center;
 	background: #004986;
@@ -319,14 +443,54 @@ a {
 	width: 400px;
 }
 
+.p-contact__item [type=radio] {
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+}
+
 .p-contact__radios {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
 }
 
+.p-contact__radio-text {
+	padding-left: 24px;
+	position: relative;
+}
+
+.p-contact__radio-text::before,
+.p-contact__radio-text::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.p-contact__radio-text::before {
+	border: 1px solid #585684;
+	content: "";
+	height: 20px;
+	left: 0;
+	position: absolute;
+	width: 20px;
+}
+
+.p-contact__radio-text::after {
+	content: "";
+	position: absolute;
+}
+
 .p-contact__btn {
 	margin-top: 60px;
+}
+
+.p-header {
+	margin: 0 auto;
+	width: 1200px;
 }
 
 .u-separate {
@@ -348,7 +512,7 @@ a {
 }
 
 .u-separate__subtitle {
-	color: #64629D;
+	color: #fff;
 	font-size: 48px;
 	font-weight: 700;
 	text-align: center;
@@ -358,7 +522,7 @@ a {
 	margin: 40px auto 0;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
 
 .is-tab {
 	display: none;
@@ -370,7 +534,7 @@ a {
 
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1279px) {
 
 .is-pc {
 	display: none;
@@ -384,9 +548,27 @@ a {
 	padding: 0 24px;
 }
 
+.p-main-visual-head-primary {
+	font-size: 32px;
+	padding: 30px 46px 24px 41px;
+	width: 350px;
 }
 
-@media screen and (max-width: 767px) {
+.p-main-visual-head-primary::after {
+	left: 44.5%;
+	top: 32%;
+}
+
+.p-main-visual-head-secondary {
+	font-size: 32px;
+	margin-left: 68px;
+	padding: 30px 46px 24px 41px;
+	width: 350px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
 
 .is-pc {
 	display: none;
@@ -425,6 +607,35 @@ a {
 	height: 30px;
 	line-height: 30px;
 	width: 30px;
+}
+
+.c-main-visual-title-block {
+	display: block;
+	margin-top: 31px;
+	padding-left: 150px;
+}
+
+.p-main-visual-head-primary {
+	font-size: 42px;
+	padding: 30px 46px 24px 41px;
+	width: 435px;
+}
+
+.p-main-visual-head-primary::after {
+	left: 48.5%;
+	top: 39%;
+}
+
+.p-main-visual-head-secondary {
+	font-size: 42px;
+	margin-left: 0;
+	margin-top: 41px;
+	padding: 26px 59px 24px 41px;
+	width: 435px;
+}
+
+.c-section-button {
+	margin: 60px auto 0;
 }
 
 .u-separate {

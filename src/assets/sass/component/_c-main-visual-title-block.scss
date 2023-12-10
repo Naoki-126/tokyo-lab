@@ -1,0 +1,89 @@
+@use "../global/" as g;
+
+.c-main-visual-title-block{
+    display: flex;
+    margin-top:44px;
+    padding-left: 6px;
+
+    @include g.mq('sp'){
+        display: block;
+        margin-top: 31px;
+        padding-left: 150px;
+    }
+
+}
+.p-main-visual-head-primary {
+    font-size: 43px;
+    font-weight: 700;
+    font-family: g.$ff-en;
+    color:#FFEA00;
+    background:#004986 ;
+    width: 431px;
+    height: 92px;
+    padding: 25px 46px 24px 41px;
+
+    @include g.mq('tab'){
+        width: 350px;
+        font-size: 32px;
+        padding: 30px 46px 24px 41px;
+    }
+
+    @include g.mq('sp'){
+        width: 435px;
+        font-size: 42px;
+        padding: 30px 46px 24px 41px;
+    }
+
+
+    &::after{
+        content: "+";
+        font-size: 50px;
+        color: #fff;
+        top: 37%;
+        left: 45.2%;
+        position: absolute;
+        font-weight: normal;
+
+        @include g.mq('tab'){
+           top: 32%;
+           left: 44.5%;
+        }
+
+        @include g.mq('sp'){
+            top: 39%;
+            left: 48.5%;
+         }
+    }
+
+   
+ }
+
+ .p-main-visual-head-secondary{
+    font-size: 43px;
+    font-weight: 700;
+    font-family: g.$ff-en;
+    color:#FFEA00;
+    background:#004986 ;
+    width: 431px;
+    height: 92px;
+    padding: 25px 46px 24px 41px;
+    margin-left: 84px;
+
+    @include g.mq('tab'){
+        width: 350px;
+        margin-left: 68px;
+        font-size: 32px;
+        padding: 30px 46px 24px 41px;
+    }
+
+    @include g.mq('sp'){
+        width: 435px;
+        margin-left: 0;
+        font-size: 42px;
+        padding: 26px 59px 24px 41px;
+        margin-top: 41px;
+    }
+
+ }
+
+

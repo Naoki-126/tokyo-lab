@@ -1,0 +1,4 @@
+// px を rem に変換する関数
+@function rem($arg) {
+  @return calc($arg / 16 * 1rem);
+  }

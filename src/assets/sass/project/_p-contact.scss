@@ -17,6 +17,10 @@
   &:not(:first-child) {
     margin-top: 20px;
   }
+
+  &.-radio {
+    align-items: start;
+  }
 }
 
 .p-contact__head {
@@ -48,7 +52,11 @@
   }
 
   [type="radio"] {
-
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
   }
 }
 
@@ -63,6 +71,30 @@
 }
 
 .p-contact__radio-text {
+  position: relative;
+  padding-left: 24px;
+
+  &::before,&::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    border: 1px solid global.$text-color ;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+
+  }
 
 }
 
