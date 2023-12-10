@@ -1,0 +1,34 @@
+@use "../global/" as g;
+.c-section-button {
+    max-width: 432px;
+    width: 100%;
+    margin: 100px auto 0;
+
+    @include g.mq('sp'){
+        margin: 60px auto 0;
+    }
+}
+
+.p-section-button-text {
+    background:#004986;
+    font-family: g.$ff-en;
+    font-size: 25px;
+    color: #fff;
+    display: inline-block;
+    padding: 29px 66px 26px;
+    position: relative;
+
+    &::after{
+    position: absolute;
+    top: 39%;
+    right: 43px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16.477" height="18.249" viewBox="0 0 16.477 18.249"><path id="パス_15" data-name="パス 15" d="M981.3,1158.54l13.974,7.608-13.974,8.92" transform="translate(-980.765 -1157.662)" fill="none" stroke="%23fff" stroke-width="2"/></svg>');
+
+    
+    }
+
+}
+

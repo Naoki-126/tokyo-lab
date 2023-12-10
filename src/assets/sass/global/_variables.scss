@@ -1,13 +1,13 @@
 //色
-$main-color: #EDECFC;
+$main-color:#2D2D32;
 $sub-color: #F9F9F9;
-$accent-color: #64629D;
-$text-color: #2D2D32;
-$link-color: #1592e6;
+$accent-color:#fff;
+$text-color :#585684;
+$link-color:#fff;
 
 //フォント
-$ff-base: 'Noto Sans JP', "Meiryo", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif; // 日本語標準
-$ff-log: 'Lato', 'sans-serif';
+$ff-en: 'Montserrat', sans-serif;
+$ff-base: 'Noto Sans JP', 'NotoSansCJKjp' , sans-serif;
 $fz-base: 16px;
 $fw-base: 400;
 $lh-base: 1.6;
@@ -15,16 +15,18 @@ $ls-base: .08;
 
 // レイアウト
 $wide-width: 1920px;
-$inner-width: 1440px;
+$inner-width: 1280px;
 $tab-width: 1000px;
 $sp-width: 768px;
 
 // ブレークポイント
 $breakpoints: (
   // スマホ以下の場合
-  "sp": "screen and (max-width: #{$sp-width - 1px})",
+  // "sp": "screen and (max-width: #{$sp-width - 1px})",
+  'sp': 'screen and (max-width: #{$sp-width})',
   // タブレット以下の場合
-  "tab": "screen and (max-width: #{$tab-width - 1px})",
+  // "tab": "screen and (max-width: #{$tab-width - 1px})",
+  'tab':'screen and (max-width: #{$inner-width - 1px})',
   // タブレット以上の場合
   "pc": "screen and (min-width: #{$inner-width})"
 );

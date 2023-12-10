@@ -1,0 +1,33 @@
+@use "../global/" as g;
+.c-util-button {
+    max-width: 432px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+
+}
+
+.p-util-text {
+    background:#FFEA00;
+    font-family: g.$ff-en;
+    font-size: 25px;
+    color: #000;
+    display: inline-block;
+    padding: 29px 128px 26px;
+    position: relative;
+
+    &::after{
+        width: 16.477px;
+        height: 18.249px;
+        background-image: url('data:image/svg+xml;utf8,<svg height="18.249" viewBox="0 0 16.477 18.249" width="16.477" xmlns="http://www.w3.org/2000/svg"><path d="m981.3 1158.54 13.974 7.608-13.974 8.92" fill="none" stroke="%23000" stroke-width="2" transform="translate(-980.765 -1157.662)"/></svg>');
+        display: inline-block;
+        position: absolute;
+        content: "";
+        top: 38%;
+        left: 73%;
+    
+    }
+
+
+}
+
